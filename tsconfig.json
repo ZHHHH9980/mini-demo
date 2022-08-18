@@ -1,0 +1,38 @@
+{
+  "files": ["src/lib/index.tsx"],
+  "compilerOptions": {
+    "isolatedModules": false,
+    "declaration": true,
+    "target": "es6",
+    "module": "esnext",
+    "lib": ["es7", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    // "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "paths": {
+      "@ies/kefu-tag-table": ["src/lib/*"]
+    },
+    "plugins": [
+      {
+        "transform": "ts-optchain/transform"
+      }
+    ]
+  },
+  "typeRoots": ["node", "node_modules/@types", "./src/typings"],
+  "exclude": ["node_modules"]
+}
